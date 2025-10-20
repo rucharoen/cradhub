@@ -1,0 +1,13 @@
+POST http://localhost:3000/api/orders
+Content-Type: application/json
+
+{
+  "full_name": "ทดสอบ ลูกค้า",
+  "phone": "0812345678",
+  "address": "123 ถนนตัวอย่าง กรุงเทพฯ",
+  "payment_method": "promptpay",
+  "shipping_thb": 50,
+  "items": [
+    { "product_id": "<ใส่ id สินค้าจริงจาก /api/products>", "qty": 1 }
+  ]
+}
