@@ -120,3 +120,23 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* รีเซ็ตสไตล์ปุ่มปิด dialog ของ shadcn/ui */
+[data-slot="dialog-close"] {
+  @apply ring-0 ring-offset-0 outline-none shadow-none bg-transparent border-none;
+}
+[data-slot="dialog-close"][data-state="open"] {
+  @apply bg-transparent;
+}
+button[data-slot="dialog-close"]{
+  opacity: 1 !important;
+  color: #000 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+}
+button[data-slot="dialog-close"]:hover{
+  background: rgba(226,232,240,0.7) !important; /* slate-200/70 */
+}
+
