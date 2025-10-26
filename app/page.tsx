@@ -284,15 +284,7 @@ export default function CardAbilityBrowser() {
                     </Card>
                   ))}
                 </div>
-                <DialogClose asChild>
-                  <button
-                    onClick={() => setOpen(false)}
-                    className="absolute right-3 top-3 p-2 rounded-full text-black hover:bg-slate-200/70 transition"
-                    aria-label="ปิด"
-                  >
-                    ✕
-                  </button>
-                </DialogClose>
+                
               </DialogContent>
             </Dialog>
           </div>
